@@ -20,7 +20,7 @@ module.exports = {
         .setImage(imageUrl);
 
       // Reply to the user who executed the command
-      message.reply({ embeds: [embed] });
+      message({ embeds: [embed] });
     } catch (error) {
       console.error('Error fetching dog image:', error);
       // Reply to the user who executed the command
